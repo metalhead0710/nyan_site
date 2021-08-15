@@ -1,0 +1,39 @@
+nyan_site.categories:
+  title: 'Categories'
+  route_name: nyan_site.nyan_categories
+  description: 'Contains categories admin panel'
+  menu_name: admin
+  parent: system.admin
+  weight: 107
+
+nyan_site.categories.brands:
+  title: 'Brands'
+  route_name: view.categories.brands
+  description: 'Contains brand categories admin panel'
+  menu_name: admin
+  parent: nyan_site.categories
+  weight: 0
+
+nyan_site.categories.skin_types:
+  title: 'Skin types'
+  route_name: view.categories.skin_types
+  description: 'Contains skin types categories admin panel'
+  menu_name: admin
+  parent: nyan_site.categories
+  weight: 1
+
+nyan_site.categories.suppliers:
+  title: 'Suppliers'
+  route_name: view.categories.suppliers
+  description: 'Contains suppliers admin panel'
+  menu_name: admin
+  parent: nyan_site.categories
+  weight: 2
+
+nyan_site.categories.product_type:
+  title: 'Product type'
+  route_name: view.categories.product_types
+  description: 'Contains available product types admin panel'
+  menu_name: admin
+  parent: nyan_site.categories
+  weight: 3

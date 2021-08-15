@@ -1,0 +1,14 @@
+uuid: 219c5183-9757-4664-8e81-d1ef42c0dd4f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - for.spam.kolia@mail.ru
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

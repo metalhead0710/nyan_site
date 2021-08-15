@@ -1,0 +1,43 @@
+nyan_site.categories.product_type_create:
+  route_name: entity.taxonomy_term.add_form
+  title: 'Add product type'
+  route_parameters:
+    taxonomy_vocabulary: 'product_types'
+  options:
+    query:
+      destination: '/admin/categories/product-types'
+  appears_on:
+    - view.categories.product_types
+
+nyan_site.categories.brand_create:
+  route_name: entity.taxonomy_term.add_form
+  title: 'Add brand'
+  route_parameters:
+    taxonomy_vocabulary: 'brand'
+  options:
+    query:
+      destination: '/admin/categories/brands'
+  appears_on:
+    - view.categories.brands
+
+nyan_site.categories.skin_type_create:
+  route_name: entity.taxonomy_term.add_form
+  title: 'Add skin type'
+  route_parameters:
+    taxonomy_vocabulary: 'skin_type'
+  options:
+    query:
+      destination: '/admin/categories/skin-types'
+  appears_on:
+    - view.categories.skin_types
+
+nyan_site.categories.supplier_create:
+  route_name: entity.taxonomy_term.add_form
+  title: 'Add supplier'
+  route_parameters:
+    taxonomy_vocabulary: 'supplier'
+  options:
+    query:
+      destination: '/admin/categories/suppliers'
+  appears_on:
+    - view.categories.suppliers

@@ -1,0 +1,7 @@
+nyan_site.nyan_categories:
+  path: '/admin/categories'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: Categories
+  requirements:
+    _permission: 'access administration pages'

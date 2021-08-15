@@ -1,0 +1,4 @@
+administer nyan_site configuration:
+  title: 'Administer nyan_site configuration'
+  description: 'Optional description.'
+  restrict access: true

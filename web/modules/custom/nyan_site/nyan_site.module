@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function nyan_site_page_attachments_alter(array &$page) {
+  $page['#attached']['library'][] = 'nyan_site/icons';
+}

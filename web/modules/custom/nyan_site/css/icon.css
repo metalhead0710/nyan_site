@@ -1,0 +1,79 @@
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-home:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-home:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-home:active:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-home.is-active:before,
+.menu-item--expanded .toolbar-icon-nyan-site-home:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/home.svg);
+}
+
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-services:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-services:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-services:active:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-services.is-active:before,
+.menu-item--expanded .toolbar-icon-nyan-site-services:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/service.svg);
+}
+
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-products:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-products:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-products:active:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-products.is-active:before,
+.menu-item--expanded .toolbar-icon-nyan-site-products:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/product.svg);
+}
+
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-promo:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-promo:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-promo:active:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-promo.is-active:before,
+.menu-item--expanded .toolbar-icon-nyan-site-promo:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/promo.svg);
+}
+
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-blog:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-blog:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-blog:active:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-blog.is-active:before,
+.menu-item--expanded .toolbar-icon-nyan-site-blog:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/blog.svg);
+}
+
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-pages:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-pages:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-pages:active:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-pages.is-active:before,
+.menu-item--expanded .toolbar-icon-nyan-site-pages:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/page.svg);
+}
+
+.adminimal-admin-toolbar .toolbar-tray-horizontal .menu-item--expanded:hover .toolbar-icon-nyan-site-categories:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-categories:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-categories:active:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-categories.is-active:before,
+.menu-item--expanded .toolbar-icon-nyan-site-categories:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/categories.svg);
+}
+
+.adminimal-admin-toolbar .toolbar-tray-horizontal .menu-item--expanded:hover .toolbar-icon-nyan-site-nyan-settings:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-nyan-settings:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-nyan-settings:active:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-nyan-settings.is-active:before,
+.menu-item--expanded .toolbar-icon-nyan-site-nyan-settings:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/settings.svg);
+}
+
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-projects:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-projects:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-projects:active:before,
+.adminimal-admin-toolbar .toolbar-icon-nyan-site-projects.is-active:before,
+.menu-item--expanded .toolbar-icon-nyan-site-projects:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/projects.svg);
+}
+
+.adminimal-admin-toolbar .toolbar-icon-entity-product-price-collection:before,
+.adminimal-admin-toolbar .toolbar-icon-entity-product-price-collection:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-entity-product-price-collection:active:before,
+.adminimal-admin-toolbar .toolbar-icon-entity-product-price-collection.is-active:before,
+.menu-item--expanded .toolbar-icon-entity-product-price-collection:before {
+  background-image: url(/modules/custom/nyan_site/icons/drupal/price.svg);
+}
