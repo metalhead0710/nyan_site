@@ -1,0 +1,14 @@
+uuid: 7b924fef-e2bd-462a-a2be-34372682c2de
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.nyan
+  module:
+    - user
+id: user_add_role_action.nyan
+label: 'Add the Nyan role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: nyan

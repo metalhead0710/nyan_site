@@ -1,0 +1,14 @@
+uuid: 04f4a92d-8e36-4b19-91db-c483201c17a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.supplier
+id: taxonomy_term.supplier.default
+targetEntityType: taxonomy_term
+bundle: supplier
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

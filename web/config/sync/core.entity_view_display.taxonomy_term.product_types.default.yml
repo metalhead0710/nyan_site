@@ -1,0 +1,14 @@
+uuid: ff95bc53-e46f-428c-a9f5-c4ab281210a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.product_types
+id: taxonomy_term.product_types.default
+targetEntityType: taxonomy_term
+bundle: product_types
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

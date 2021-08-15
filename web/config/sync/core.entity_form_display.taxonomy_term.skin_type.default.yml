@@ -1,0 +1,24 @@
+uuid: fa0348e2-20cc-4566-8212-1e291e2ea191
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.skin_type
+id: taxonomy_term.skin_type.default
+targetEntityType: taxonomy_term
+bundle: skin_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true
+  status: true

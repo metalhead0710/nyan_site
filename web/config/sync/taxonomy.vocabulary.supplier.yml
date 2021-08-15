@@ -1,0 +1,8 @@
+uuid: 47681044-945b-490b-98c7-ffb59baca1dd
+langcode: en
+status: true
+dependencies: {  }
+name: Suppliers
+vid: supplier
+description: 'Contains the list of all suppliers'
+weight: 0

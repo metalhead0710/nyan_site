@@ -1,0 +1,9 @@
+uuid: 6edc4b47-38ff-4493-b0d6-8b7b01d4a9ee
+langcode: en
+status: true
+dependencies: {  }
+id: nyan
+label: Nyan
+weight: 3
+is_admin: null
+permissions: {  }

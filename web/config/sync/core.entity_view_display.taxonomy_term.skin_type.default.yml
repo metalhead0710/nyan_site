@@ -1,0 +1,14 @@
+uuid: 6e6802af-7f85-4a88-9c52-8e463c0c0711
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.skin_type
+id: taxonomy_term.skin_type.default
+targetEntityType: taxonomy_term
+bundle: skin_type
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

@@ -1,0 +1,14 @@
+uuid: 9ee10e36-0587-4307-b3aa-ec1dbb53dbff
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.nyan
+  module:
+    - user
+id: user_remove_role_action.nyan
+label: 'Remove the Nyan role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: nyan

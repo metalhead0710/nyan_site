@@ -1,0 +1,24 @@
+uuid: 94c7af7a-252a-4463-b0ed-45f1fa73dca4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.supplier
+id: taxonomy_term.supplier.default
+targetEntityType: taxonomy_term
+bundle: supplier
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true
+  status: true

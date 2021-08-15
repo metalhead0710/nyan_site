@@ -1,0 +1,8 @@
+uuid: 04810530-58e9-4175-8ccb-9bd0c723f943
+langcode: en
+status: true
+dependencies: {  }
+name: 'Skin type'
+vid: skin_type
+description: 'Represents skin type categories'
+weight: 0

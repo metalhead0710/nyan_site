@@ -1,0 +1,14 @@
+uuid: ec2beff0-330c-4461-af97-f717f8c532bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.brand
+id: taxonomy_term.brand.default
+targetEntityType: taxonomy_term
+bundle: brand
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true
