@@ -24,6 +24,8 @@
 /web/sites/*/files/php
 /web/sites/*/files/media-icons
 /web/sites/*/files/documents
+/web/error_log
+/web/access_log
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
