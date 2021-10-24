@@ -826,6 +826,7 @@ $databases['default']['default'] = [
 
 $settings['trusted_host_patterns'] = [
   '^nyan\.loc$',
+  '^nyan\.koni\-na\-balkoni\.com\.ua$'
 ];
 
 $settings[''] = 'sites/default/files/config_7Kb4ommAjiSSbRsCYf4s6ruzGLLD9VCUhNrhEmZ_zBNGsae9NuiSiyBZ-N2xWW1zZjnjGKDHgw/sync';
