@@ -1,0 +1,20 @@
+uuid: 8307f832-88b5-4d5e-88a4-6584d9413a48
+langcode: en
+status: true
+dependencies:
+  module:
+    - nyan_product
+    - taxonomy
+id: product.field_brand
+field_name: field_brand
+entity_type: product
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

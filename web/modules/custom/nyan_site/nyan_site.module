@@ -6,3 +6,22 @@
 function nyan_site_page_attachments_alter(array &$page) {
   $page['#attached']['library'][] = 'nyan_site/icons';
 }
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ */
+function nyan_site_field_formatter_info_alter(array &$info) {
+  $info['entity_reference_label']['field_types'][] = 'entity_reference_with_quantity';
+}
+
+/**
+ * Implements hook__multiple_field_remove_button_field_types_alter()
+ */
+function nyan_site_multiple_field_remove_button_field_types_alter(array &$field_types) {
+  $custom_fields = [
+    'entity_reference_with_quantity',
+  ];
+  foreach ($custom_fields as $field) {
+    $field_types[] = $field;
+  }
+}

@@ -1,0 +1,5 @@
+services:
+  nyan_site.sample_entity_provider:
+    class: Drupal\nyan_site\Entity\SampleEntityProvider
+    arguments:
+      - '@entity_type.manager'

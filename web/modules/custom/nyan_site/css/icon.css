@@ -14,11 +14,11 @@
   background-image: url(/modules/custom/nyan_site/icons/drupal/service.svg);
 }
 
-.adminimal-admin-toolbar .toolbar-icon-nyan-site-products:before,
-.adminimal-admin-toolbar .toolbar-icon-nyan-site-products:hover:before,
-.adminimal-admin-toolbar .toolbar-icon-nyan-site-products:active:before,
-.adminimal-admin-toolbar .toolbar-icon-nyan-site-products.is-active:before,
-.menu-item--expanded .toolbar-icon-nyan-site-products:before {
+.adminimal-admin-toolbar .toolbar-icon-entity-product-collection:before,
+.adminimal-admin-toolbar .toolbar-icon-entity-product-collection:hover:before,
+.adminimal-admin-toolbar .toolbar-icon-entity-product-collection:active:before,
+.adminimal-admin-toolbar .toolbar-icon-entity-product-collection.is-active:before,
+.menu-item--expanded .toolbar-icon-entity-product-collection:before {
   background-image: url(/modules/custom/nyan_site/icons/drupal/product.svg);
 }
 

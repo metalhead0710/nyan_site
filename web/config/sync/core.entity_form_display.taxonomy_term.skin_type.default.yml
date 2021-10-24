@@ -4,6 +4,14 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.skin_type
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.skin_type.default
 targetEntityType: taxonomy_term
 bundle: skin_type

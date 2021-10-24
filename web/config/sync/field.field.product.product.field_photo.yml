@@ -1,0 +1,30 @@
+uuid: 9983b479-997d-496f-9dbd-f013417abe69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.product.field_photo
+    - media.type.product_photo
+  module:
+    - nyan_product
+id: product.product.field_photo
+field_name: field_photo
+entity_type: product
+bundle: product
+label: Photo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      product_photo: product_photo
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

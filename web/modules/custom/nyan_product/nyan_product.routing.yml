@@ -1,0 +1,8 @@
+# Base route for the price fields UI.
+product.settings:
+  path: '/admin/structure/product-settings'
+  defaults:
+    _controller: \Drupal\nyan_product\Controller\ProductAdminController::configuration
+    _title: 'Product settings'
+  requirements:
+    _permission: 'administer products'

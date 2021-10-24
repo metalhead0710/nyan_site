@@ -1,0 +1,21 @@
+uuid: b32616e3-c155-44f3-8d2d-55d9d21f5009
+langcode: en
+status: true
+dependencies: {  }
+name: bo_webp_thumb
+label: 'BO webp thumb'
+effects:
+  0524b084-d4e3-4898-871c-bc830880c0f1:
+    uuid: 0524b084-d4e3-4898-871c-bc830880c0f1
+    id: image_convert
+    weight: 1
+    data:
+      extension: webp
+  640f5fb6-9447-4b8f-a909-76a0048fd3b3:
+    uuid: 640f5fb6-9447-4b8f-a909-76a0048fd3b3
+    id: image_scale
+    weight: 2
+    data:
+      width: 150
+      height: 100
+      upscale: false

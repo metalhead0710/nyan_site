@@ -1,0 +1,35 @@
+uuid: e4e3f26d-b40d-44db-ae9b-290ccc21eb2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.product.field_distribution_info
+    - taxonomy.vocabulary.supplier
+  module:
+    - nyan_product
+    - nyan_site
+id: product.product.field_distribution_info
+field_name: field_distribution_info
+entity_type: product
+bundle: product
+label: 'Distribution info'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      supplier: supplier
+    sort:
+      field: name
+      direction: asc
+    auto_create: 0
+    auto_create_bundle: ''
+  quantity_settings:
+    title: 'Available stock'
+    description: 'Represents the amount of items'
+    default_value: '0'
+field_type: entity_reference_with_quantity

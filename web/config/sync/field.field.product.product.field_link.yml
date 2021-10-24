@@ -1,0 +1,23 @@
+uuid: 32154f58-4c98-4bbd-a1fe-fa74a644c003
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.product.field_link
+  module:
+    - link
+    - nyan_product
+id: product.product.field_link
+field_name: field_link
+entity_type: product
+bundle: product
+label: Instalink
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

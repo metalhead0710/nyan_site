@@ -6,6 +6,7 @@ use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\Plugin\Field\FieldWidget\EntityReferenceAutocompleteWidget;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\link\LinkItemInterface;
 
 /**
  * Provides widget for entity reference with quantity field type.
@@ -53,6 +54,9 @@ class EntityReferenceWithQuantityWidget extends EntityReferenceAutocompleteWidge
       $form,
       $form_state
     );
+    $fields['target_id']['#title'] = $this->t('Supplier');
+    $fields['target_id']['#placeholder'] = $this->t('Supplier');
+    $fields['target_id']['#title_display'] = 'attribute';
 
     $quantity_settings = $this->fieldDefinition->getSetting('quantity_settings');
     $default_value = isset($items[$delta]) ?
@@ -62,7 +66,7 @@ class EntityReferenceWithQuantityWidget extends EntityReferenceAutocompleteWidge
     $fields['quantity'] = [
       '#title' => $title,
       '#type' => 'number',
-      '#default_value' => $default_value,
+      '#default_value' => $default_value ?? 0,
       '#min' => static::QUANTITY_MIN_VALUE,
       '#weight' => static::FIELD_QUANTITY_WEIGHT,
     ];
@@ -70,7 +74,16 @@ class EntityReferenceWithQuantityWidget extends EntityReferenceAutocompleteWidge
       '#title' => $this->t('Price'),
       '#type' => 'number',
       '#step' => 'any',
+      '#suffix' => 'UAH',
       '#default_value' => $items[$delta]->price ?? 0,
+    ];
+    $fields['uri'] = [
+      '#type' => 'url',
+      '#title' => $this->t('Supplier product url'),
+      '#placeholder' => $this->t('URL'),
+      '#default_value' =>  $items[$delta]->uri ?? NULL,
+      '#maxlength' => 2048,
+      '#link_type' => LinkItemInterface::LINK_EXTERNAL,
     ];
     $widget += $fields;
 

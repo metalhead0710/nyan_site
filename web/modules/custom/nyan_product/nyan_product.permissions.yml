@@ -1,0 +1,9 @@
+administer products:
+  title: 'Administer products'
+  description: 'Allow to access the administration form to configure Product entities.'
+  restrict access: true
+
+manage products:
+  title: 'Manage prroducts'
+  description: 'Allow to manage products entities.'
+  restrict access: true

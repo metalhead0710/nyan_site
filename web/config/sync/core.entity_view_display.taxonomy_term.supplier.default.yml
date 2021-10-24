@@ -4,6 +4,14 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.supplier
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.supplier.default
 targetEntityType: taxonomy_term
 bundle: supplier

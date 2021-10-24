@@ -7,6 +7,7 @@ use Drupal\Core\Field\Plugin\Field\FieldType\EntityReferenceItem;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Core\TypedData\DataDefinition;
+use Drupal\Core\Url;
 
 /**
  * Provides list of entity reference items with quantity.
@@ -37,6 +38,8 @@ class EntityReferenceWithQuantity extends EntityReferenceItem {
       ->setRequired(TRUE);
     $properties['price'] = DataDefinition::create('string')
       ->setLabel(t('Price'));
+    $properties['uri'] = DataDefinition::create('uri')
+      ->setLabel(t('URI'));
 
     return $properties;
   }
@@ -58,6 +61,11 @@ class EntityReferenceWithQuantity extends EntityReferenceItem {
         'not_null' => TRUE,
         'default' => 0,
         'unsigned' => TRUE,
+      ],
+      'uri' => [
+        'description' => 'The URI of the link.',
+        'type' => 'varchar',
+        'length' => 2048,
       ],
     ];
 
@@ -130,6 +138,13 @@ class EntityReferenceWithQuantity extends EntityReferenceItem {
     ]);
 
     return $constraints;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getUrl() {
+    return Url::fromUri($this->uri);
   }
 
   /**

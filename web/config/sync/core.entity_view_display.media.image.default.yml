@@ -7,7 +7,14 @@ dependencies:
     - image.style.large
     - media.type.image
   module:
+    - field_layout
     - image
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: B1a2aBHmUulUZN6HrxITEH1tSResuVjXMBEv1lUBtOo
 id: media.image.default

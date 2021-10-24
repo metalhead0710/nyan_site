@@ -1,0 +1,13 @@
+uuid: 747616db-9b2b-4617-b7b9-c81edb94696f
+langcode: en
+status: true
+dependencies: {  }
+id: product_photo
+label: 'Product photo'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

@@ -1,0 +1,30 @@
+uuid: f1d4ce55-f8dc-4d2a-ad71-fc92d3cee17e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.product.field_skin_type
+    - taxonomy.vocabulary.skin_type
+  module:
+    - nyan_product
+id: product.product.field_skin_type
+field_name: field_skin_type
+entity_type: product
+bundle: product
+label: 'Skin type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      skin_type: skin_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,121 @@
+uuid: 32119108-6682-49ee-9722-00f45a49d195
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.product.product.field_brand
+    - field.field.product.product.field_description
+    - field.field.product.product.field_distribution_info
+    - field.field.product.product.field_link
+    - field.field.product.product.field_photo
+    - field.field.product.product.field_product_type
+    - field.field.product.product.field_skin_type
+  module:
+    - field_group
+    - field_layout
+    - layout_discovery
+    - link
+    - media_library
+    - nyan_product
+    - nyan_site
+third_party_settings:
+  field_group:
+    group_categories:
+      children:
+        - field_brand
+        - field_skin_type
+        - field_product_type
+      parent_name: ''
+      weight: 6
+      format_type: fieldset
+      region: second
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Categories
+  field_layout:
+    id: layout_twocol
+    settings:
+      label: ''
+id: product.product.default
+targetEntityType: product
+bundle: product
+mode: default
+content:
+  field_brand:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: second
+  field_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: first
+  field_distribution_info:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_with_quantity
+    region: bottom
+  field_link:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: first
+  field_photo:
+    type: media_library_widget
+    weight: 1
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: top
+  field_product_type:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: second
+  field_skin_type:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: second
+  langcode:
+    type: language_select
+    weight: 0
+    region: top
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  price:
+    type: number
+    weight: 4
+    region: first
+    settings:
+      placeholder: UAH
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: first
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

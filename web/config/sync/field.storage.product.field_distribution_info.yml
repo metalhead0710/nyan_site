@@ -1,0 +1,21 @@
+uuid: 4a15de36-5c5a-4a4e-bfcb-a8472f238792
+langcode: en
+status: true
+dependencies:
+  module:
+    - nyan_product
+    - nyan_site
+    - taxonomy
+id: product.field_distribution_info
+field_name: field_distribution_info
+entity_type: product
+type: entity_reference_with_quantity
+settings:
+  target_type: taxonomy_term
+module: nyan_site
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
