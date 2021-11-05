@@ -11,13 +11,13 @@ dependencies:
     - field.field.product.product.field_product_type
     - field.field.product.product.field_skin_type
   module:
+    - chosen_field
     - field_group
     - field_layout
     - layout_discovery
     - link
     - media_library
     - nyan_product
-    - nyan_site
 third_party_settings:
   field_group:
     group_categories:
@@ -49,7 +49,7 @@ content:
     weight: 7
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: chosen_select
     region: second
   field_description:
     weight: 3
@@ -59,16 +59,6 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: first
-  field_distribution_info:
-    weight: 7
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_with_quantity
-    region: bottom
   field_link:
     weight: 5
     settings:
@@ -88,13 +78,13 @@ content:
     weight: 9
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: chosen_select
     region: second
   field_skin_type:
     weight: 8
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: chosen_select
     region: second
   langcode:
     type: language_select
@@ -118,4 +108,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_distribution_info: true
