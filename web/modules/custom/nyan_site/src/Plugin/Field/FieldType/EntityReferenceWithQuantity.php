@@ -36,10 +36,6 @@ class EntityReferenceWithQuantity extends EntityReferenceItem {
     $properties['quantity'] = DataDefinition::create('integer')
       ->setLabel(t('Quantity'))
       ->setRequired(TRUE);
-    $properties['price'] = DataDefinition::create('string')
-      ->setLabel(t('Price'));
-    $properties['uri'] = DataDefinition::create('uri')
-      ->setLabel(t('URI'));
 
     return $properties;
   }
@@ -55,17 +51,6 @@ class EntityReferenceWithQuantity extends EntityReferenceItem {
       'quantity' => [
         'type' => 'int',
         'size' => 'normal',
-      ],
-      'price' => [
-        'type' => 'numeric',
-        'not_null' => TRUE,
-        'default' => 0,
-        'unsigned' => TRUE,
-      ],
-      'uri' => [
-        'description' => 'The URI of the link.',
-        'type' => 'varchar',
-        'length' => 2048,
       ],
     ];
 
@@ -120,31 +105,6 @@ class EntityReferenceWithQuantity extends EntityReferenceItem {
     ];
 
     return $form;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getConstraints() {
-    $constraint_manager = \Drupal::typedDataManager()->getValidationConstraintManager();
-    $constraints = parent::getConstraints();
-
-    $constraints[] = $constraint_manager->create('ComplexData', [
-      'price' => [
-        'Regex' => [
-          'pattern' => '/^[+-]?((\d+(\.\d*)?)|(\.\d+))$/i',
-        ],
-      ],
-    ]);
-
-    return $constraints;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getUrl() {
-    return Url::fromUri($this->uri);
   }
 
   /**

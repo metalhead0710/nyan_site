@@ -1,0 +1,15 @@
+entity.supply.settings:
+  path: 'admin/structure/supply'
+  defaults:
+    _controller: Drupal\nyan_supply\Controller\SupplyAdminController::configuration
+    _title: 'Supply'
+  requirements:
+    _permission: 'administer supply'
+
+entity.supply_item.settings:
+  path: 'admin/structure/supply-item'
+  defaults:
+    _controller: Drupal\nyan_supply\Controller\SupplyAdminController::configuration
+    _title: 'Supply item'
+  requirements:
+    _permission: 'administer supply'

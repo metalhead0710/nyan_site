@@ -25,3 +25,10 @@ function nyan_site_multiple_field_remove_button_field_types_alter(array &$field_
     $field_types[] = $field;
   }
 }
+
+/**
+ * Implements hook__multiple_field_remove_button_skip_widgets_alter().
+ */
+function nyan_site_multiple_field_remove_button_skip_widgets_alter(array &$skipWidgets) {
+  $skipWidgets[] = "inline_entity_form_complex_table_view_mode";
+}

@@ -35,6 +35,8 @@
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drupal/field_group": "^3.2",
+        "drupal/ief_table_view_mode": "^2.2",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/jquery_ui_accordion": "^1.1",
         "drupal/module_builder": "^3.20",
         "drupal/multiple_fields_remove_button": "^1.0@alpha",

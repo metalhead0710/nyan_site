@@ -1,0 +1,5 @@
+administer supply:
+  title: 'Administer supply settings'
+  restrict access: true
+access supply overview:
+  title: 'Access supply overview page'

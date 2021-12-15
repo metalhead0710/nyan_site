@@ -1,0 +1,29 @@
+entity.supply.settings:
+  title: Settings
+  route_name: entity.supply.settings
+  base_route: entity.supply.settings
+entity.supply.edit_form:
+  title: Edit
+  route_name: entity.supply.edit_form
+  base_route: entity.supply.canonical
+entity.supply.delete_form:
+  title: Delete
+  route_name: entity.supply.delete_form
+  base_route: entity.supply.canonical
+  weight: 10
+
+
+entity.supply_item.settings:
+  title: Settings
+  route_name: entity.supply_item.settings
+  base_route: entity.supply_item.settings
+entity.supply_item.edit_form:
+  title: Edit
+  route_name: entity.supply_item.edit_form
+  base_route: entity.supply_item.canonical
+entity.supply_item.delete_form:
+  title: Delete
+  route_name: entity.supply_item.delete_form
+  base_route: entity.supply_item.canonical
+  weight: 10
+

@@ -1,0 +1,25 @@
+entity.supply.settings:
+  title: Supply
+  description: Configure a Supply entity type
+  route_name:  entity.supply.settings
+  parent: system.admin_structure
+
+entity.supply.collection:
+  title: Supplies
+  description: List of supplies
+  route_name: view.supplies.list
+  menu_name: admin
+  parent: system.admin
+  weight: 108
+
+entity.supply_item.settings:
+  title: Supply item
+  description: Configure a Supply item entity type
+  route_name:  entity.supply_item.settings
+  parent: system.admin_structure
+
+entity.supply_item.collection:
+  title: Supply items
+  description: List of supply items
+  route_name: entity.supply_item.collection
+  parent: system.admin_content

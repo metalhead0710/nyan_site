@@ -1,0 +1,11 @@
+supply.add_form:
+  route_name: entity.supply.add_form
+  title: 'Add supply'
+  appears_on:
+    - view.supplies.list
+
+supply_item.add_form:
+  route_name: entity.supply_item.add_form
+  title: 'Add supply item'
+  appears_on:
+    - entity.supply_item.collection

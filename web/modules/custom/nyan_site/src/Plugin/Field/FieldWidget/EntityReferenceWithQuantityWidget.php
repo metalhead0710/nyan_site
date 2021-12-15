@@ -70,21 +70,7 @@ class EntityReferenceWithQuantityWidget extends EntityReferenceAutocompleteWidge
       '#min' => static::QUANTITY_MIN_VALUE,
       '#weight' => static::FIELD_QUANTITY_WEIGHT,
     ];
-    $fields['price'] = [
-      '#title' => $this->t('Price'),
-      '#type' => 'number',
-      '#step' => 'any',
-      '#suffix' => 'UAH',
-      '#default_value' => $items[$delta]->price ?? 0,
-    ];
-    $fields['uri'] = [
-      '#type' => 'url',
-      '#title' => $this->t('Supplier product url'),
-      '#placeholder' => $this->t('URL'),
-      '#default_value' =>  $items[$delta]->uri ?? NULL,
-      '#maxlength' => 2048,
-      '#link_type' => LinkItemInterface::LINK_EXTERNAL,
-    ];
+
     $widget += $fields;
 
     return $widget;
